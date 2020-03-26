@@ -1,0 +1,35 @@
+
+I94YR - 4 digit year
+I94MON - Numeric month
+I94CIT & I94RES - This format shows all the valid and invalid codes for processing
+  value i94cntyl
+I94PORT - This format shows all the valid and invalid codes for processing
+  value $i94prtl
+ARRDATE is the Arrival Date in the USA. It is a SAS date numeric field that
+   permament format has not been applied.  Please apply whichever date format 
+   works for you. */
+I94MODE - There are missing values as well as not reported (9)
+I94ADDR - There is lots of invalid codes in this variable and the list bel
+   shows what we have found to be valid, everything else goes into 'other' */
+DEPDATE is the Departure Date from the USA. It is a SAS date numeric field th
+   a permament format has not been applied.  Please apply whichever date format 
+   works for you. */
+I94BIR - Age of Respondent in Years
+I94VISA - Visa codes collapsed into three categori
+COUNT - Used for summary statistics
+DTADFILE - Character Date Field - Date added to I-94 Files - CIC does not use
+VISAPOST - Department of State where where Visa was issued - CIC does not use
+OCCUP - Occupation that will be performed in U.S. - CIC does not use
+ENTDEPA - Arrival Flag - admitted or paroled into the U.S. - CIC does not use
+ENTDEPD - Departure Flag - Departed, lost I-94 or is deceased - CIC does not use
+ENTDEPU - Update Flag - Either apprehended, overstayed, adjusted to perm residence - CIC does not use
+MATFLAG - Match flag - Match of arrival and departure records
+BIRYEAR - 4 digit year of birth
+DTADDTO - Character Date Field - Date to which admitted to U.S. (allowed to stay until) - CIC does not use
+GENDER - Non-immigrant sex
+INSNUM - INS number
+AIRLINE - Airline used to arrive in U.S.
+ADMNUM - Admission Number
+FLTNO - Flight number of Airline used to arrive in U.S.
+VISATYPE - Class of admission legally admitting the non-immigrant to temporarily stay in U.S.
+run ;
