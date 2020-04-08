@@ -1,4 +1,3 @@
-
 I94YR - 4 digit year
 I94MON - Numeric month
 I94CIT & I94RES - This format shows all the valid and invalid codes for processing

@@ -1,0 +1,110 @@
+root
+ |-- city: string (nullable = true)
+ |-- state: string (nullable = true)
+ |-- state_full: string (nullable = true)
+ |-- median_age: double (nullable = true)
+ |-- male_pop: integer (nullable = true)
+ |-- female_pop: integer (nullable = true)
+ |-- total_pop: integer (nullable = true)
+ |-- num_veterans: integer (nullable = true)
+ |-- foreign_born: integer (nullable = true)
+ |-- avg_household_size: double (nullable = true)
+ |-- Black or African-American: integer (nullable = true)
+ |-- Hispanic or Latino: integer (nullable = true)
+ |-- White: integer (nullable = true)
+ |-- Asian: integer (nullable = true)
+ |-- American Indian and Alaska Native: integer (nullable = true)
+ |-- id: long (nullable = false)
+
+Shape: (12189, 16)
++-----------+-----+--------------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+------+-----+---------------------------------+---+
+|       city|state|    state_full|median_age|male_pop|female_pop|total_pop|num_veterans|foreign_born|avg_household_size|Black or African-American|Hispanic or Latino| White|Asian|American Indian and Alaska Native| id|
++-----------+-----+--------------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+------+-----+---------------------------------+---+
+|   Gastonia|   NC|North Carolina|      36.9|   35527|     39023|    74550|        3537|        5715|              2.67|                    22179|              6653| 46362| 2788|                              603|  0|
+|  Henderson|   NV|        Nevada|      42.5|  139412|    146246|   285658|       25045|       35666|              2.55|                    18816|             47154|234301|24931|                             3036|  1|
+|Yorba Linda|   CA|    California|      45.5|   31960|     36006|    67966|        3171|       15532|               3.0|                     1326|             10599| 49980|17616|                              211|  2|
+|    Medford|   OR|        Oregon|      38.6|   39606|     40189|    79795|        6632|        6185|              2.65|                     1201|             14294| 75464| 2135|                             1239|  3|
+|      Kenai|   AK|          null|      null|    null|      null|     null|        null|        null|              null|                     null|              null|  null| null|                             null|  4|
++-----------+-----+--------------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+------+-----+---------------------------------+---+
+only showing top 5 rows
+
+Null counts:
++----+-----+----------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+-----+-----+---------------------------------+---+
+|city|state|state_full|median_age|male_pop|female_pop|total_pop|num_veterans|foreign_born|avg_household_size|Black or African-American|Hispanic or Latino|White|Asian|American Indian and Alaska Native| id|
++----+-----+----------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+-----+-----+---------------------------------+---+
+|   0|    0|     11593|     11593|   11594|     11594|    11593|       11600|       11600|             11601|                    11605|             11593|11600|11606|                            11650|  0|
++----+-----+----------+----------+--------+----------+---------+------------+------------+------------------+-------------------------+------------------+-----+-----+---------------------------------+---+
+
+root
+ |-- ident: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- name: string (nullable = true)
+ |-- elevation_ft: integer (nullable = true)
+ |-- continent: string (nullable = true)
+ |-- iso_country: string (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- id: long (nullable = false)
+ |-- city_id: long (nullable = true)
+
+Shape: (22757, 10)
++-----+-------------+--------------------+------------+---------+-----------+-------------------+------------------+-----+------------+
+|ident|         type|                name|elevation_ft|continent|iso_country|           latitude|         longitude|   id|     city_id|
++-----+-------------+--------------------+------------+---------+-----------+-------------------+------------------+-----+------------+
+| KAVL|large_airport|Asheville Regiona...|        2165|       NA|         US| -82.54180145263672| 35.43619918823242|13638|377957122049|
+| NC67|small_airport|    Six Oaks Airport|        2015|       NA|         US|           -82.4525|         35.467778|17789|377957122049|
+| NC95|     heliport|Mission Hospitals...|        2200|       NA|         US|         -82.548501|         35.575298|17818|377957122049|
+| 3NY2|     heliport|    Astoria Heliport|          15|       NA|         US| -73.91210174560547| 40.78620147705078| 4487|          21|
+| K20U|small_airport|       Beach Airport|        2756|       NA|         US|-103.98200225830078|46.925201416015625|12839|          48|
++-----+-------------+--------------------+------------+---------+-----------+-------------------+------------------+-----+------------+
+only showing top 5 rows
+
+Null counts:
++-----+----+----+------------+---------+-----------+--------+---------+---+-------+
+|ident|type|name|elevation_ft|continent|iso_country|latitude|longitude| id|city_id|
++-----+----+----+------------+---------+-----------+--------+---------+---+-------+
+|    0|   0|   0|         239|        0|          0|       0|        0|  0|    102|
++-----+----+----+------------+---------+-----------+--------+---------+---+-------+
+
+root
+ |-- cicid: integer (nullable = true)
+ |-- year: integer (nullable = true)
+ |-- month: integer (nullable = true)
+ |-- I94CIT: integer (nullable = true)
+ |-- I94RES: integer (nullable = true)
+ |-- port: string (nullable = true)
+ |-- arrdate: date (nullable = true)
+ |-- arrmode_id: integer (nullable = true)
+ |-- addr_state: string (nullable = true)
+ |-- depdate: date (nullable = true)
+ |-- age: integer (nullable = true)
+ |-- visa_id: integer (nullable = true)
+ |-- match_flag: boolean (nullable = false)
+ |-- birth_year: integer (nullable = true)
+ |-- insnum: string (nullable = true)
+ |-- admission_num: double (nullable = true)
+ |-- flight_num: string (nullable = true)
+ |-- visatype_id: long (nullable = true)
+ |-- airline_id: long (nullable = true)
+ |-- gender_id: long (nullable = true)
+ |-- id: long (nullable = false)
+ |-- city_id: long (nullable = true)
+
+Shape: (3096313, 22)
++-------+----+-----+------+------+----+----------+----------+----------+----------+---+-------+----------+----------+------+---------------+----------+-----------+----------+---------+------------+----------+
+|  cicid|year|month|I94CIT|I94RES|port|   arrdate|arrmode_id|addr_state|   depdate|age|visa_id|match_flag|birth_year|insnum|  admission_num|flight_num|visatype_id|airline_id|gender_id|          id|   city_id|
++-------+----+-----+------+------+----+----------+----------+----------+----------+---+-------+----------+----------+------+---------------+----------+-----------+----------+---------+------------+----------+
+|2867760|2016|    4|   691|   691| CNA|2016-04-15|         3|      null|2016-04-17| 44|      2|      true|      1972|  null| 8.767308293E10|     01031|          2|      null|        0|171799506114|8589934593|
+|4691347|2016|    4|   129|   129| CNA|2016-04-25|         3|      null|2016-05-29| 18|      3|      true|      1998|  null| 8.443655563E10|     00121|          3|      null|        0|171799507330|8589934593|
+|1356812|2016|    4|   111|   111| CNA|2016-04-08|         3|        ME|2016-04-10| 27|      2|      true|      1989|  null|   7.41520185E8|      LAND|          9|      null|        0|171799517337|8589934593|
+|4035007|2016|    4|   111|   111| CNA|2016-04-22|         3|        ME|2016-04-24|  6|      2|      true|      2010|  null|4.2318202933E10|      LAND|          9|      null|        0|171799517338|8589934593|
+|4035009|2016|    4|   111|   111| CNA|2016-04-22|         3|        ME|2016-04-24|  2|      2|      true|      2014|  null|4.2318203833E10|      LAND|          9|      null|        0|171799517339|8589934593|
++-------+----+-----+------+------+----+----------+----------+----------+----------+---+-------+----------+----------+------+---------------+----------+-----------+----------+---------+------------+----------+
+only showing top 5 rows
+
+Null counts:
++-----+----+-----+------+------+----+-------+----------+----------+-------+---+-------+----------+----------+-------+-------------+----------+-----------+----------+---------+---+-------+
+|cicid|year|month|I94CIT|I94RES|port|arrdate|arrmode_id|addr_state|depdate|age|visa_id|match_flag|birth_year| insnum|admission_num|flight_num|visatype_id|airline_id|gender_id| id|city_id|
++-----+----+-----+------+------+----+-------+----------+----------+-------+---+-------+----------+----------+-------+-------------+----------+-----------+----------+---------+---+-------+
+|    0|   0|    0|     0|     0|   0|      0|       239|    152592| 142457|802|      0|         0|       802|2982605|            0|     19549|          0|     83627|   414269|  0| 100955|
++-----+----+-----+------+------+----+-------+----------+----------+-------+---+-------+----------+----------+-------+-------------+----------+-----------+----------+---------+---+-------+
